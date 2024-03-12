@@ -41,7 +41,7 @@ function addTask(){
     function deleteCard(){
          deleteBtn.addEventListener('click',nowVanish);
          function nowVanish(){
-            if(todoContainer.contains(divCard))
+            if(todoContainer.contains(divCard)|| doneContainer.contains(divCard) )
             divCard.remove();  
          }
     }
